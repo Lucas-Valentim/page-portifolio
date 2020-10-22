@@ -8,8 +8,6 @@ $(document).ready(function () {
 });
 
 function callback(mutationsList, observer) {
-    console.log('Mutations:', mutationsList)
-    console.log('Observer:', observer)
     mutationsList.forEach(mutation => {
         if (mutation.attributeName === 'class') {
             if (mutation.target.classList.contains('active')) {
