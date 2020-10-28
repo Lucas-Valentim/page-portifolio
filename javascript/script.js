@@ -5,6 +5,25 @@ $(document).ready(function () {
     var carousels = document.querySelectorAll('.carousel-item');
     carousels.forEach(item => mutantionObserver.observe(item, item))
     
+    var timelineContainer = document.querySelector('.timelineTitle');
+    timelineContainer.addEventListener('click', e => {
+        let timeline = document.querySelector('.timeline');
+        timeline.classList.toggle('hide');
+        console.log(timeline);
+
+        let arrow = document.getElementsByName('arrow-forward-outline')[0];
+        if (arrow == null) {
+            arrow = document.getElementsByName('arrow-down-outline')[0];
+            arrow.setAttribute('name', 'arrow-forward-outline')
+            // arrow.classList.remove('arrow-down-outline');
+            // arrow.classList.add('arrow-forward-outline');
+        }
+        else {
+            arrow.setAttribute('name', 'arrow-down-outline')
+            // arrow.classList.remove('arrow-forward-outline');
+            // arrow.classList.add('arrow-down-outline');
+        }
+    })
 });
 
 function callback(mutationsList, observer) {

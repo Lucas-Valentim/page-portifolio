@@ -33,6 +33,13 @@ main {
     background-color: rgba(255, 255, 255, 0.13);
     border-radius: 20px;
     margin-bottom: 30px;
+    padding: 0px 30px;
+}
+
+.groupContent h3 {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 20px;
 }
 
 .halfContentDown {
@@ -51,7 +58,7 @@ main {
 }
 
 .page p {
-    padding: 20px 15px;
+    padding: 20px 10px;
     text-align: left;
     line-height: 20px;
 }
@@ -109,11 +116,6 @@ nav {
     background-color: #343a40 !important;
 }
 
-.list-inline-item:not(:last-child) {
-    /*Margem dos ícones exceto o último da lista*/
-    margin-right: .5rem !important;
-}
-
 .carousel {
     background-color: rgba(255, 255, 255, 0.13);
     height: 300px !important;
@@ -139,13 +141,34 @@ nav {
 @media (min-width: 47em) {
     .sidenav {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
         justify-content: space-evenly;
         padding: 25px 60px 10px 60px !important;
-        background-color: rgb(10, 10, 10);
+        /* background-color: rgb(10, 10, 10); */
         max-height: 630px;
         text-align: center;
+    }
+
+    .sideDesc {
+        position: fixed;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .sideDesc h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .list-inline-item:not(:last-child) {
+        /*Margem dos ícones exceto o último da lista*/
+        margin-right: .5rem !important;
+    }
+
+    .list-inline {
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     .groupContent {
@@ -171,7 +194,7 @@ nav {
     }
 
     .page p {
-        padding: 20px 20px;
+        padding: 20px 10px;
     }
 
     .page h1 {
@@ -239,13 +262,13 @@ nav {
         cursor: pointer;
     }
 
-    ion-icon[name='logo-facebook']:hover {
+    ion-icon[name='mail-outline']:hover {
         color: #0c88ef;
         cursor: pointer;
     }
 
-    ion-icon[name='logo-instagram']:hover {
-        color: #ce0071;
+    ion-icon[name='logo-dribbble']:hover {
+        color: #ea4c89;
         cursor: pointer;
     }
 
@@ -269,3 +292,133 @@ nav {
 /* @media (min-width: 100em) {
     ...
 } */
+
+
+
+/*TIME LINE*/
+/*Referencia: https://www.bootdey.com/snippets/view/timeline-events*/
+
+.timeline {
+    /* border-left: 3px solid #727cf5; */
+    border-left: 3px solid #6c63ff;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background: rgba(255, 255, 255, 0.09);
+    margin: 35px auto 50px auto;
+    letter-spacing: 0.2px;
+    position: relative;
+    line-height: 1.4em;
+    font-size: 1.03em;
+    padding: 50px;
+    list-style: none;
+    text-align: left;
+    max-width: 40%;
+    transition: linear 0.26s;
+}
+
+.hide {
+    display: none;
+}
+
+.timelineTitle {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+}
+
+.timeline h1 {
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+.timeline h2,
+.timeline h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.timeline .event {
+    border-bottom: 1px dashed #e8ebf1;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    .timeline .event {
+        padding-top: 30px;
+    }
+}
+
+.timeline .event:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .event:before,
+.timeline .event:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+.timeline .event:before {
+    left: -207px;
+    content: attr(data-date);
+    text-align: right;
+    font-weight: 100;
+    font-size: 0.9em;
+    min-width: 120px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+}
+
+.timeline .event:after {
+    -webkit-box-shadow: 0 0 0 3px #6c63ff;
+    box-shadow: 0 0 0 3px #6c63ff;
+    left: -55.8px;
+    background: #fff;
+    border-radius: 50%;
+    height: 9px;
+    width: 9px;
+    content: "";
+    top: 5px;
+}
+
+@media (max-width: 767px) {
+    .timeline .event:after {
+        left: -31.8px;
+    }
+}
+
+.rtl .timeline {
+    border-left: 0;
+    text-align: right;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-right: 3px solid #6c63ff;
+}
+
+.rtl .timeline .event::before {
+    left: 0;
+    right: -170px;
+}
+
+.rtl .timeline .event::after {
+    left: 0;
+    right: -55.8px;
+}
