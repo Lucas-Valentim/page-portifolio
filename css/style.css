@@ -13,6 +13,22 @@ main {
     height: 100%;
 }
 
+.dark-theme {
+    --color-primary: rgb(10, 10, 10);
+    --color-secundary: #343a40;
+    --color-tertiary: rgba(255, 255, 255, 0.13);
+    --color-accent: rgba(255, 255, 255, 0.281);
+    --font-color: rgb(226, 226, 226);
+}
+
+.light-theme {
+    --color-primary: white;
+    --color-secundary: #eaeaea;
+    --color-tertiary: rgba(255, 255, 255, 0.7);
+    --color-accent: rgba(191, 191, 191, 0.28);
+    --font-color: black;
+}
+
 .page {
     display: flex;
     flex-direction: column;
@@ -55,6 +71,8 @@ main {
     border-Bottom-left-radius: 20px;
     border-Bottom-right-radius: 20px;
     margin-bottom: 30px;
+    padding: 0px 20px;
+
 }
 
 .page p {
@@ -91,10 +109,6 @@ main {
     width: 50px;
 }
 
-/* .page h2:hover:after {
-        width: 50px;
-    } */
-
 span {
     font-weight: bold;
     color: #6c63ff;
@@ -114,6 +128,35 @@ nav {
 
 .navbar-toggler {
     background-color: #343a40 !important;
+}
+
+#navbarNav {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.contact ul {
+    text-align: center;
+}
+
+ion-icon[name='logo-linkedin'] {
+    color: #0077b5;
+    cursor: pointer;
+}
+
+ion-icon[name='mail-outline'] {
+    color: #0c88ef;
+    cursor: pointer;
+}
+
+ion-icon[name='logo-dribbble'] {
+    color: #ea4c89;
+    cursor: pointer;
+}
+
+ion-icon[name='logo-github'] {
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .carousel {
@@ -138,7 +181,21 @@ nav {
 } */
 
 /* 752px */
-@media (min-width: 47em) {
+/* @media (min-width: 47em) {
+    
+} */
+
+/* 1088px */
+/* @media (min-width: 68em) {
+    ...
+} */
+
+/* 1312px */
+/* @media (min-width: 82em) {
+    ...
+} */
+
+@media (min-width: 992px) {
     .sidenav {
         display: flex;
         /* flex-direction: column; */
@@ -148,6 +205,10 @@ nav {
         /* background-color: rgb(10, 10, 10); */
         max-height: 630px;
         text-align: center;
+    }
+
+    #navbarNav {
+        display: none !important;
     }
 
     .sideDesc {
@@ -193,6 +254,14 @@ nav {
         margin-bottom: 30px;
     }
 
+    .halfContentUp p {
+        text-align: center;
+    }
+
+    .contact {
+        display: none;
+    }
+
     .page p {
         padding: 20px 10px;
     }
@@ -232,8 +301,8 @@ nav {
     .page {
         border-top-right-radius: 100px;
         border-top-left-radius: 100px;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     /*ITEMS DO BOOTSTRAP MATERIALIZE*/
@@ -276,22 +345,18 @@ nav {
         color: #ffffff;
         cursor: pointer;
     }
+
+    /* .theme {} */
 }
 
-/* 1088px */
-/* @media (min-width: 68em) {
-    ...
-} */
-
-/* 1312px */
-/* @media (min-width: 82em) {
-    ...
-} */
-
-/* 1600px */
-/* @media (min-width: 100em) {
-    ...
-} */
+@media (min-width: 1600px) {
+    .page {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
 
 
 
@@ -313,7 +378,7 @@ nav {
     list-style: none;
     text-align: left;
     max-width: 40%;
-    transition: linear 0.26s;
+    /* transition: linear 0.26s; */
 }
 
 .hide {

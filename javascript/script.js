@@ -7,23 +7,70 @@ $(document).ready(function () {
     
     var timelineContainer = document.querySelector('.timelineTitle');
     timelineContainer.addEventListener('click', e => {
-        let timeline = document.querySelector('.timeline');
-        timeline.classList.toggle('hide');
-        console.log(timeline);
+        let div = document.querySelector('#timelineDiv');
+        if(div.style.maxHeight == '0px')
+            div.style.maxHeight = '1000px';
+        else
+            div.style.maxHeight = '0px';
+        console.log(div);
 
         let arrow = document.getElementsByName('arrow-forward-outline')[0];
         if (arrow == null) {
             arrow = document.getElementsByName('arrow-down-outline')[0];
             arrow.setAttribute('name', 'arrow-forward-outline')
-            // arrow.classList.remove('arrow-down-outline');
-            // arrow.classList.add('arrow-forward-outline');
         }
-        else {
+        else
             arrow.setAttribute('name', 'arrow-down-outline')
-            // arrow.classList.remove('arrow-forward-outline');
-            // arrow.classList.add('arrow-down-outline');
-        }
+
+
+        // let timeline = document.querySelector('.timeline');
+        // timeline.classList.toggle('hide');
+        // console.log(timeline);
+
+        // let arrow = document.getElementsByName('arrow-forward-outline')[0];
+        // if (arrow == null) {
+        //     arrow = document.getElementsByName('arrow-down-outline')[0];
+        //     arrow.setAttribute('name', 'arrow-forward-outline')
+        //     // arrow.classList.remove('arrow-down-outline');
+        //     // arrow.classList.add('arrow-forward-outline');
+        // }
+        // else {
+        //     arrow.setAttribute('name', 'arrow-down-outline')
+        //     // arrow.classList.remove('arrow-forward-outline');
+        //     // arrow.classList.add('arrow-down-outline');
+        // }
     })
+
+    // $('.navbar-nav a').click(function (e) {
+    //     e.preventDefault();
+    //     var anc = this.hash;
+    //     $('body').animate({
+    //         scrollTop: $(anc).offset().top - 160
+    //     }, 300);
+    //     return false;
+    // });
+
+    // function to set a given theme/color-scheme
+    function setTheme(themeName) {
+        localStorage.setItem('theme', themeName);
+        document.documentElement.className = themeName;
+    }
+    // function to toggle between light and dark theme
+    // function toggleTheme() {
+    //    if (localStorage.getItem('theme') === 'theme-dark'){
+    //        setTheme('theme-light');
+    //    } else {
+    //        setTheme('theme-dark');
+    //    }
+    // }
+    // // Immediately invoked function to set the theme on initial load
+    // (function () {
+    //    if (localStorage.getItem('theme') === 'theme-dark') {
+    //        setTheme('theme-dark');
+    //    } else {
+    //        setTheme('theme-light');
+    //    }
+    // })();
 });
 
 function callback(mutationsList, observer) {

@@ -28,7 +28,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <a class="navbar-brand alinhamento-inicio-nav" href="#">Lucas <span>Valentim</span></a>
+            <a class="navbar-brand" href="#">Lucas <span>Valentim</span></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -36,24 +36,30 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link alinhamento-portifolio-nav" href="#"></a>
+                        <a class="nav-link" href="#knowledge">Conhecimentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link alinhamento-sobre-nav" href="#"></a>
+                        <a class="nav-link" href="#projects">Projetos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link alinhamento-contato-nav" href="#"></a>
+                        <a class="nav-link" href="javascript: document.body.scrollIntoView(false);">Contato</a>
                     </li>
                 </ul>
             </div>
+            <!-- <div class="theme">
+                <ion-icon size="large" name="sunny-outline"></ion-icon>
+
+            </div>
+            <p>Light Theme</p> -->
         </nav>
     </header>
     <main>
         <div class="container-fluid width100 height100 padding0">
             <div class="row width100 height100 padding0 margin0">
-                <aside class="col-md-3 sidenav padding0">
+                <aside class="col-lg-4 col-xl-3 sidenav padding0">
                     <div class="sideDesc">
 
                         <img src="/img/undraw_accept_tasks_po1c.svg" width="60%" />
@@ -62,22 +68,22 @@
                             vitae laoreet. Integer est urna, lacinia sit amet congue non, elementum eget ligula.</label>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="mailto:lucasv.27@hotmail.com">
+                                <a href="mailto:lucasv.27@hotmail.com" target="_blank">
                                     <ion-icon size="large" name="mail-outline"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://dribbble.com/LucassValentim"></a>
-                                <ion-icon size="large" name="logo-dribbble"></ion-icon>
+                                <a href="https://dribbble.com/LucassValentim" target="_blank">
+                                    <ion-icon size="large" name="logo-dribbble"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/lucas-valentim-22575979/">
+                                <a href="https://www.linkedin.com/in/lucas-valentim-22575979/" target="_blank">
                                     <ion-icon size="large" name="logo-linkedin"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://github.com/Lucas-Valentim">
+                                <a href="https://github.com/Lucas-Valentim" target="_blank">
                                     <ion-icon size="large" name="logo-github"></ion-icon>
                                 </a>
                             </li>
@@ -86,12 +92,12 @@
                     </div>
                 </aside>
 
-                <section class="col-md-9 col-12 page">
+                <section class="col-md-12 col-lg-8 col-xl-9 page">
 
                     <h1>Seja <span>bem-vindo</span> ao meu site!</h1>
                     <h4>Sinta-se a vontade para olhar os projetos e me enviar feedback caso você queira.</h4>
                     <div class="groupContent">
-                        <h2>Sobre</h2>
+                        <h2 id="about">Sobre</h2>
                         <p>Meu nome é <span>Lucas Valentim</span>, tenho <span>26 anos</span>
                             trabalho com desenvolvimento em <span>.net</span> desde 2019 e também faço freelancer para
                             criação de site.
@@ -102,35 +108,38 @@
                                 <ion-icon id='arrow' name="arrow-forward-outline" style="font-size: 20px;"></ion-icon>
                                 Time-Line
                             </h3>
-                            <ul class="timeline hide">
-                                <li class="event" data-date="2012">
-                                    <h5>Conclusão do curso técnico de informática</h5>
-                                </li>
-                                <li class="event" data-date="2013">
-                                    <h5>Início da grauduação em Ciência da Computação</h5>
-                                </li>
-                                <li class="event" data-date="2019">
-                                    <h5>Conclusão da graduação</h5>
-                                </li>
-                                <li class="event" data-date="2019">
-                                    <h5>Desenvolvedor .net Jr</h5>
-                                </li>
-                                <li class="event" data-date="2020">
-                                    <h5>Certificação MCSA</h5>
-                                    <h5>Certificação MCSD</h5>
-                                    <h5>Freelancer em Web Design</h5>
-                                </li>
-                            </ul>
+                            <div id="timelineDiv"
+                                style="max-height: 0px; overflow: hidden; transition: max-height 0.25s linear;">
+                                <ul class="timeline">
+                                    <li class="event" data-date="2012">
+                                        <h5>Conclusão do curso técnico de informática</h5>
+                                    </li>
+                                    <li class="event" data-date="2013">
+                                        <h5>Início da grauduação em Ciência da Computação</h5>
+                                    </li>
+                                    <li class="event" data-date="2019">
+                                        <h5>Conclusão da graduação</h5>
+                                    </li>
+                                    <li class="event" data-date="2019">
+                                        <h5>Desenvolvedor .net Jr</h5>
+                                    </li>
+                                    <li class="event" data-date="2020">
+                                        <h5>Certificação MCSA</h5>
+                                        <h5>Certificação MCSD</h5>
+                                        <h5>Freelancer em Web Design</h5>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="groupContent">
-                        <h2>Formação & Certificados</h2>
+                        <h2 id="knowledge">Formação & Certificados</h2>
                         <p>Sou formado em ciência da computação e certificado Microsoft <span>MCSA/MCSD</span>.
                             Atualmente estou focando os estudos em desenvolvimento web e frameworks como react e vue.js.
                         </p>
                     </div>
                     <div class="halfContentDown">
-                        <h2>Portifólio</h2>
+                        <h2 id="projects">Portifólio</h2>
                     </div>
                     <div class="carousel">
                         <a class="carousel-item active" id="Index1" href="https://clone-twitter-lucas.netlify.app/">
@@ -149,9 +158,39 @@
                     </div>
                     <div class="halfContentUp">
                         <h4 id="ProjectName">Projeto: Clone Login Twitter</h4>
-                        <p id="ProjectDescription" style="text-align: center;">Projeto feito com o apoio da Digital
+                        <p id="ProjectDescription">Projeto feito com o apoio da Digital
                             House com o intuito de clonar o
                             login do twitter.\nTecnologias: HTML5 e CCS3</p>
+                    </div>
+
+                    <div class="groupContent contact">
+                        <h2>Contato</h2>
+                        <p>Entre em contato através de uma das redes abaixo ou mande e-mail para lucasv.27@hotmail.com
+                        </p>
+
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="mailto:lucasv.27@hotmail.com" target="_blank">
+                                    <ion-icon size="large" name="mail-outline"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://dribbble.com/LucassValentim" target="_blank">
+                                    <ion-icon size="large" name="logo-dribbble"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/lucas-valentim-22575979/" target="_blank">
+                                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Lucas-Valentim" target="_blank">
+                                    <ion-icon size="large" name="logo-github"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
                 </section>
                 <!-- Carrousel para os projetos
@@ -171,20 +210,19 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.2.0/d3.min.js"></script> -->
 
     <!-- Materialize -->
     <!-- Compiled and minified JavaScript -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-    </script>
-    <script src="/javascript/script.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/javascript/script.js"></script>
 
-    <!-- <script>
-        $(document).ready(function () {
-            $('.carousel').carousel();
+    <script>
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
         });
-    </script> -->
+    </script>
 
 </body>
 
