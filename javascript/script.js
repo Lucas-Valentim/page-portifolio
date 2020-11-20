@@ -21,56 +21,9 @@ $(document).ready(function () {
         }
         else
             arrow.setAttribute('name', 'arrow-down-outline')
-
-
-        // let timeline = document.querySelector('.timeline');
-        // timeline.classList.toggle('hide');
-        // console.log(timeline);
-
-        // let arrow = document.getElementsByName('arrow-forward-outline')[0];
-        // if (arrow == null) {
-        //     arrow = document.getElementsByName('arrow-down-outline')[0];
-        //     arrow.setAttribute('name', 'arrow-forward-outline')
-        //     // arrow.classList.remove('arrow-down-outline');
-        //     // arrow.classList.add('arrow-forward-outline');
-        // }
-        // else {
-        //     arrow.setAttribute('name', 'arrow-down-outline')
-        //     // arrow.classList.remove('arrow-forward-outline');
-        //     // arrow.classList.add('arrow-down-outline');
-        // }
     })
 
-    // $('.navbar-nav a').click(function (e) {
-    //     e.preventDefault();
-    //     var anc = this.hash;
-    //     $('body').animate({
-    //         scrollTop: $(anc).offset().top - 160
-    //     }, 300);
-    //     return false;
-    // });
-
-    // function to set a given theme/color-scheme
-    function setTheme(themeName) {
-        localStorage.setItem('theme', themeName);
-        document.documentElement.className = themeName;
-    }
-    // function to toggle between light and dark theme
-    // function toggleTheme() {
-    //    if (localStorage.getItem('theme') === 'theme-dark'){
-    //        setTheme('theme-light');
-    //    } else {
-    //        setTheme('theme-dark');
-    //    }
-    // }
-    // // Immediately invoked function to set the theme on initial load
-    // (function () {
-    //    if (localStorage.getItem('theme') === 'theme-dark') {
-    //        setTheme('theme-dark');
-    //    } else {
-    //        setTheme('theme-light');
-    //    }
-    // })();
+    SetLanguages();
 });
 
 function callback(mutationsList, observer) {
@@ -100,4 +53,13 @@ function callback(mutationsList, observer) {
             }
         }
     })
+}
+
+function SetLanguages() {
+    localStorage.setItem('welcomePT', 'Seja <span>bem-vindo</span> ao meu site!')
+    localStorage.setItem('welcomeEN', '<span>Welcome</span> to my website!')
+    localStorage.setItem('descPT', 'Sinta-se a vontade para olhar os projetos e me enviar feedback caso você queira.')
+    localStorage.setItem('descEN', 'Feel free to look the projects and send me feed back about them.')
+    localStorage.setItem('aboutPT', 'My name is <span>Lucas Valentim</span>, have <span>26 years old</span>. I\'m <span>.net</span> developer since 2019 and web developer freelancer.')
+    localStorage.setItem('aboutEN', 'Meu nome é <span>Lucas Valentim</span>, tenho <span>26 anos</span> trabalho com desenvolvimento em <span>.net</span> desde 2019 e também faço freelancer para criação de site. Criei essa página com o intuito de mostrar e divulgar um pouco os meus trabalhos pessoais. Conforme eu for finalizando os projetos vou acrecentando-os aqui')
 }

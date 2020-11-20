@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- O meta abaixo faz com que apareça um preview do site ao enviar o link pelo whats por exemplo -->
+    <meta property="og:image" content="url_da_imagem">
     <title>Lucas Valentim</title>
     <!-- bootstrap -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap" rel="stylesheet">
@@ -29,6 +31,12 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
             <a class="navbar-brand" href="#">Lucas <span>Valentim</span></a>
+
+            <div class="lang">
+                Idioma:
+            </div>
+            <img class="langFlag" src="/img/brbrazilflag.png" alt="Idioma Portugês">
+            <img class="langFlag" src="/img/usaflag.png" alt="Idioma Inglês">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -47,6 +55,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="javascript: document.body.scrollIntoView(false);">Contato</a>
                     </li>
+                    <li class="nav-item">
+                        <div class="langMob">
+                            Idioma:
+                        </div>
+                        <img class="langFlagMob" src="/img/brbrazilflag.png" alt="Idioma Portugês">
+                        <img class="langFlagMob" src="/img/usaflag.png" alt="Idioma Inglês">
+                    </li>
                 </ul>
             </div>
             <!-- <div class="theme">
@@ -62,13 +77,13 @@
                 <aside class="col-lg-4 col-xl-3 sidenav padding0">
                     <div class="sideDesc">
 
-                        <img src="/img/undraw_accept_tasks_po1c.svg" width="60%" />
+                        <img src="/img/laptop.svg" width="60%" />
                         <h3 class="">Lucas <span>Valentim</span></h3>
                         <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer semper ullamcorper nisi
                             vitae laoreet. Integer est urna, lacinia sit amet congue non, elementum eget ligula.</label>
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <a href="mailto:lucasv.27@hotmail.com" target="_blank">
+                                <a href="mailto:lucasv.27@hotmail.com">
                                     <ion-icon size="large" name="mail-outline"></ion-icon>
                                 </a>
                             </li>
@@ -88,7 +103,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <button class="btn btn-purple">Contato</button>
+                        <!-- <button class="btn btn-purple">Contato</button> -->
                     </div>
                 </aside>
 

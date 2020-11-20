@@ -170,6 +170,27 @@ ion-icon[name='logo-github'] {
     box-shadow: 0px 10px 35px 1px rgba(0, 0, 0, 0.79);
 }
 
+.langFlagMob {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.langMob {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.langFlag {
+    display: none;
+}
+
+.lang {
+    display: none;
+}
+
 /* 592px */
 /* @media (min-width: 37em) {
     ...
@@ -292,6 +313,7 @@ ion-icon[name='logo-github'] {
 
     nav {
         padding-left: 60px !important;
+        padding-right: 60px !important;
     }
 
     main {
@@ -303,6 +325,28 @@ ion-icon[name='logo-github'] {
         border-top-left-radius: 100px;
         padding-left: 80px;
         padding-right: 80px;
+    }
+
+    .langFlag {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .lang {
+        display: block;
+        text-align: right;
+        width: 100%;
+        vertical-align: middle;
+        margin-right: 7px;
+    }
+
+    .langFlagMob {
+        display: none;
+    }
+
+    .langMob {
+        display: none;
     }
 
     /*ITEMS DO BOOTSTRAP MATERIALIZE*/
