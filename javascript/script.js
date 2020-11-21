@@ -23,7 +23,10 @@ $(document).ready(function () {
             arrow.setAttribute('name', 'arrow-down-outline')
     })
 
-    SetLanguages();
+    // var pt = document.querySelector('#PTtoEN');
+    // pt.addEventListener('click', e => { ChangeLanguage(e)})
+    // var en = document.querySelector('#ENtoPT');
+    // en.addEventListener('click', e => {ChangeLanguage(e)})
 });
 
 function callback(mutationsList, observer) {
@@ -55,11 +58,25 @@ function callback(mutationsList, observer) {
     })
 }
 
-function SetLanguages() {
-    localStorage.setItem('welcomePT', 'Seja <span>bem-vindo</span> ao meu site!')
-    localStorage.setItem('welcomeEN', '<span>Welcome</span> to my website!')
-    localStorage.setItem('descPT', 'Sinta-se a vontade para olhar os projetos e me enviar feedback caso você queira.')
-    localStorage.setItem('descEN', 'Feel free to look the projects and send me feed back about them.')
-    localStorage.setItem('aboutPT', 'My name is <span>Lucas Valentim</span>, have <span>26 years old</span>. I\'m <span>.net</span> developer since 2019 and web developer freelancer.')
-    localStorage.setItem('aboutEN', 'Meu nome é <span>Lucas Valentim</span>, tenho <span>26 anos</span> trabalho com desenvolvimento em <span>.net</span> desde 2019 e também faço freelancer para criação de site. Criei essa página com o intuito de mostrar e divulgar um pouco os meus trabalhos pessoais. Conforme eu for finalizando os projetos vou acrecentando-os aqui')
-}
+// function SetLanguages() {
+//     localStorage.setItem('welcomePT', 'Seja <span>bem-vindo</span> ao meu site!')
+//     localStorage.setItem('welcomeEN', '<span>Welcome</span> to my website!')
+//     localStorage.setItem('descPT', 'Sinta-se a vontade para olhar os projetos e me enviar feedback caso você queira.')
+//     localStorage.setItem('descEN', 'Feel free to look the projects and send me feed back about them.')
+//     localStorage.setItem('aboutPT', 'My name is <span>Lucas Valentim</span>, have <span>26 years old</span>. I\'m <span>.net</span> developer since 2019 and web developer freelancer.')
+//     localStorage.setItem('aboutEN', 'Meu nome é <span>Lucas Valentim</span>, tenho <span>26 anos</span> trabalho com desenvolvimento em <span>.net</span> desde 2019 e também faço freelancer para criação de site. Criei essa página com o intuito de mostrar e divulgar um pouco os meus trabalhos pessoais. Conforme eu for finalizando os projetos vou acrecentando-os aqui')
+// }
+
+// function ChangeLanguage(event) {
+//     var en = (event.target.alt.indexOf('Inglês') !== -1)
+//     var pt = (event.target.alt.indexOf('Portuguese') !== -1)
+
+//     if (!en && !pt) {
+//         return;
+//     } else if (en) {
+//         var wel = document.querySelector('#wel');
+//         wel.innerHTML = '<span>Welcome</span> to my website!'
+//     } else if(pt) {
+        
+//     }
+// }
