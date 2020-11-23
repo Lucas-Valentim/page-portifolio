@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- O meta abaixo faz com que apareça um preview do site ao enviar o link pelo whats por exemplo -->
-    <meta property="og:image" content="/img/laptop.svg">
+    <meta property="og:image" content="url_da_imagem">
     <title>Lucas Valentim</title>
     <!-- bootstrap -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;800&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
+    <!-- Materialize -->
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/reset.css" rel="stylesheet">
     <link href="/css/default.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
     <link href="/css/materialize.css" rel="stylesheet">
-    <!-- <link rel="icon" type="imagem/png" href="/imagens/meufavicon.png" /> -->
     <link rel="shortcut icon" href="/img/laptop.ico" type="imagem/x-icon" />
 
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -32,8 +40,8 @@
                 Idioma:
             </div>
             <a href="/index.html"><img class="langFlag" id="ENtoPT" src="/img/brbrazilflag.png"
-                    alt="Portuguese Language"></a>
-            <a href="#"><img class="langFlag" id="PTtoEN" src="/img/usaflag.png" alt="English Language"></a>
+                    alt="Idioma Portugês"></a>
+            <a href="#"><img class="langFlag" id="PTtoEN" src="/img/usaflag.png" alt="Idioma Inglês"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
                 <span class="navbar-toggler-icon"></span>
@@ -57,12 +65,17 @@
                             Idioma:
                         </div>
                         <a href="/index.html"><img class="langFlagMob" id="ENtoPT" src="/img/brbrazilflag.png"
-                                alt="Portuguese Language"></a>
+                                alt="Language Portuguese"></a>
                         <a href="#"><img class="langFlagMob" id="PTtoEN" src="/img/usaflag.png"
-                                alt="English Language"></a>
+                                alt="Language English"></a>
                     </li>
                 </ul>
             </div>
+            <!-- <div class="theme">
+                <ion-icon size="large" name="sunny-outline"></ion-icon>
+
+            </div>
+            <p>Light Theme</p> -->
         </nav>
     </header>
     <main>
@@ -71,53 +84,54 @@
                 <aside class="col-lg-4 col-xl-3 sidenav padding0">
                     <div class="sideDesc">
 
-                        <img src="/img/laptop.svg" width="60%" />
-                        <h3 class="">Lucas <span>Valentim</span></h3>
-                        <label>Caso queira entrar em contato para criação do seu site ou por qualquer outro motivo, por
-                            favor utilize as redes abaixo ou mande um e-mail para lucasv.27@hotmail.com com a mensagem e
-                            te retornarei o mais breve possível.</label>
+                        <img src="/img/photo.jpg" width="60%" />
+                        <h3>Lucas <span>Valentim</span></h3>
+                        <label>If you want to contact me to create your website or for any other reason,
+                            please use the networks below or send an email to lucasv.27@hotmail.com and
+                            I will return to you as soon as possible.</label>
                         <ul class="list-inline">
-                            <li class="list-inline-item">
+                            <!-- <li class="list-inline-item">
                                 <a href="mailto:lucasv.27@hotmail.com">
                                     <ion-icon size="large" name="mail-outline"></ion-icon>
                                 </a>
-                            </li>
+                            </li> -->
                             <li class="list-inline-item">
                                 <a href="https://dribbble.com/LucassValentim" target="_blank">
-                                    <ion-icon size="large" name="logo-dribbble"></ion-icon>
+                                    <ion-icon size="large" name="logo-dribbble" class="logo-dribbble"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://www.linkedin.com/in/lucas-valentim-22575979/" target="_blank">
-                                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                                    <ion-icon size="large" name="logo-linkedin" class="logo-linkedin"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://github.com/Lucas-Valentim" target="_blank">
-                                    <ion-icon size="large" name="logo-github"></ion-icon>
+                                    <ion-icon size="large" name="logo-github" class="logo-github"></ion-icon>
                                 </a>
                             </li>
                         </ul>
+                        <!-- <button class="btn btn-purple">Contato</button> -->
                     </div>
                 </aside>
 
                 <section class="col-md-12 col-lg-8 col-xl-9 page">
 
-                    <h1 id="wel"><span>Welcome</span> ao meu site!</h1>
-                    <h4>Sinta-se a vontade para olhar os projetos e me enviar feedback caso você queira.</h4>
+                    <h1 id="wel">Welcome!</h1>
+                    <h4>Portfolio page developed to present the created projects.</h4>
                     <div class="groupContent">
-                        <h2 id="about">Sobre Mim</h2>
-                        <p>Prazer, meu nome é <span>Lucas Valentim</span>. Trabalho com desenvolvimento em
-                            <span>.net</span> desde 2019 e a partir de 2020 também comecei a fazer freelancer para
-                            criação de sites. O primeiro site criado que está publicado é este meu portifólio, mas se
-                            quer conhercer alguns dos meus projetos pessoais é só descer logo abaixo na seção de
-                            Portifólio.
+                        <h2 id="about">About</h2>
+                        <p>Nice to meet you, my name is Lucas Valentim. I'm .Net developer since 2019 and from 2021 I
+                            also started freelancing for
+                            develop websites. The first website created that is published is this portfolio, but if
+                            want to know some of my personal projects just drop down below in the
+                            Projects.
                         </p>
-                        <p>Desde a realização do curso técnico em informática eu descobri que sou apaixonado pelo
-                            desenvolvimento web. E nos últimos anos tenho me dedicado bastante para aprofundar o
-                            conhecimento nessa área.</p>
-                        <p>Nessa página você também encontra meus contatos caso tenha interesse de criar um site para
-                            você ou apenas me dar um feedback dos trabalhos.</p>
+                        <p>Since taking the technical course in computer science I have found that I am passionate about
+                            Web development. And in the last few years I have dedicated myself a lot to deepen the
+                            knowledge in this area.</p>
+                        <p>On this page you can also find my contacts if you are interested in creating a website for
+                            you or just give me feedback on the jobs.</p>
                         <div class="timelineContainer">
                             <h3 class="timelineTitle">
                                 <ion-icon id='arrow' name="arrow-forward-outline" style="font-size: 20px;"></ion-icon>
@@ -127,54 +141,55 @@
                                 style="max-height: 0px; overflow: hidden; transition: max-height 0.25s linear;">
                                 <ul class="timeline">
                                     <li class="event" data-date="2012">
-                                        <h5>Conclusão do curso técnico de informática</h5>
+                                        <h5>Completion of the technical computer course</h5>
                                     </li>
                                     <li class="event" data-date="2013">
-                                        <h5>Início da grauduação em Ciência da Computação</h5>
+                                        <h5>Start of Computer Science graduation</h5>
                                     </li>
                                     <li class="event" data-date="2019">
-                                        <h5>Conclusão da graduação</h5>
+                                        <h5>Graduation completion</h5>
                                     </li>
                                     <li class="event" data-date="2019">
-                                        <h5>Desenvolvedor .net Jr</h5>
+                                        <h5>Jr .Net Developer</h5>
                                     </li>
                                     <li class="event" data-date="2020">
-                                        <h5>Certificação MCSA</h5>
-                                        <h5>Certificação MCSD</h5>
-                                        <h5>Freelancer em Web Design</h5>
+                                        <h5>MCSA Certification</h5>
+                                        <h5>MCSD Certification</h5>
+                                    </li>
+                                    <li class="event" data-date="2021">
+                                        <h5>Freelancer in Web Design</h5>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="groupContent">
-                        <h2 id="knowledge">Conhecimentos</h2>
-                        <p>Como citado na seção acima, sou apaixonado por desenvolvimento e estou me dedicando à
-                            isso
-                            nos últimos anos. E durante esse tempo consegui tirar duas certificações Microsoft, de
+                        <h2 id="knowledge">Knowledge</h2>
+                        <p>As mentioned in the section above, I am passionate about development and I am dedicated to it
+                            in the last years. And during that time I managed to get two Microsoft certifications, from
                             MCSA
-                            (Microsoft Certified Solutions Associate) e MCSD (Microsoft Certified Solutions
+                            (Microsoft Certified Solutions Associate) and MCSD (Microsoft Certified Solutions
                             Developer).
                         </p>
-                        <p>Esses dois certificados consegui graças a empresa em que estou hoje, que me deu a
-                            primeira
-                            oportunidade de emprego na área de programação, em 2019. Entrei como como desenvolvedor
-                            .net
-                            Jr e estou até hoje. Nesse tempo aprendi muito sobre C#, ASP, Framework Dev Express,
-                            Entity
+                        <p>These two certificates I got thanks to the company I am in today, which gave me the first
+                            job opportunity in the programming area, in 2019. During that time I learned a lot about C
+                            #,
+                            ASP, Framework Dev Express, Entity
                             Framework,
-                            TFS, T-SQL (SQL Server), Javascript, Scrum, Kanban. E por fora sempre estudando temas
-                            relacionados ao
-                            .Net como o .Net Core para tentar me manter atualizado.</p>
-                        <p>Além dessas certificações também venho realizando cursos na área de web como o curso da
-                            Digital House em parceria com o Facebook. O objetivo agora é aprender frameworks como
-                            react
-                            e vue.js
+                            TFS, T-SQL (SQL Server), Javascript, Scrum, Kanban. Outside the company I always try to
+                            study
+                            .Net Core, Javascript and framworks to try to keep me updated.</p>
+                        <p>
+                            In addition to these certifications, I have also been conducting courses in the web area
+                            such as the
+                            Digital House in partnership with Facebook. The goal now is to go deeper into frameworks
+                            how to React
+                            and Vue.js
                         </p>
 
                     </div>
                     <div class="halfContentDown">
-                        <h2 id="projects">Projetos</h2>
+                        <h2 id="projects">Projects</h2>
                     </div>
                     <div class="carousel">
                         <a class="carousel-item active" id="Index1" href="https://clone-twitter-lucas.netlify.app/">
@@ -192,18 +207,17 @@
                         <!-- <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a> -->
                     </div>
                     <div class="halfContentUp">
-                        <h4 id="ProjectName">Projeto: Clone Login Twitter</h4>
-                        <p id="ProjectDescription">Projeto feito com o apoio da Digital
-                            House com o intuito de clonar o
-                            login do twitter.\nTecnologias: HTML5 e CCS3</p>
+                        <h4 id="ProjectName">Project: Clone Login Twitter</h4>
+                        <p id="ProjectDescription">Project made with the support of Digital
+                            House in order to clone the
+                            twitter login. \ nTechnologies: HTML5 and CCS3</p>
                     </div>
 
                     <div class="groupContent contact">
-                        <h2>Contato</h2>
-                        <p>Caso queira entrar em contato para criação do seu site ou por qualquer outro motivo, por
-                            favor utilize as redes abaixo ou mande um e-mail para lucasv.27@hotmail.com com a
-                            mensagem e
-                            te retornarei o mais breve possível.
+                        <h2>Contact</h2>
+                        <p>If you want to contact me to create your website or for any other reason,
+                            please use the networks below or send an email to lucasv.27@hotmail.com and
+                            I will return to you as soon as possible.
                         </p>
 
                         <ul class="list-inline">
@@ -214,23 +228,25 @@
                             </li> -->
                             <li class="list-inline-item">
                                 <a href="https://dribbble.com/LucassValentim" target="_blank">
-                                    <ion-icon size="large" name="logo-dribbble"></ion-icon>
+                                    <ion-icon size="large" name="logo-dribbble" class="logo-dribbble"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://www.linkedin.com/in/lucas-valentim-22575979/" target="_blank">
-                                    <ion-icon size="large" name="logo-linkedin"></ion-icon>
+                                    <ion-icon size="large" name="logo-linkedin" class="logo-linkedin"></ion-icon>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="https://github.com/Lucas-Valentim" target="_blank">
-                                    <ion-icon size="large" name="logo-github"></ion-icon>
+                                    <ion-icon size="large" name="logo-github" class="logo-github"></ion-icon>
                                 </a>
                             </li>
                         </ul>
 
                     </div>
                 </section>
+                <!-- Carrousel para os projetos
+                https://materializecss.com/carousel.html -->
             </div>
         </div>
     </main>
@@ -246,6 +262,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.2.0/d3.min.js"></script> -->
 
     <!-- Materialize -->
     <!-- Compiled and minified JavaScript -->
