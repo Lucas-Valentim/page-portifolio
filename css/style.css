@@ -102,7 +102,7 @@ main {
     display: block;
     height: 2px;
     margin: 0 auto;
-    background: #fff;
+    background: #ff7f2a;
     transition: width 0.3s ease 0s,
         left 0.3s ease 0s;
     width: 50px;
@@ -110,7 +110,7 @@ main {
 
 span {
     font-weight: bold;
-    color: #59c2ff;
+    color: #ff7f2a;
 }
 
 nav {
@@ -238,6 +238,7 @@ ion-icon[name='logo-github'] {
 
     .sideDesc img {
         border-radius: 50px;
+        min-width: 185px;
     }
 
     .sideDesc h3 {
