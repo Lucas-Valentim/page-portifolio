@@ -218,9 +218,9 @@ ion-icon[name='logo-github'] {
 @media (min-width: 992px) {
     .sidenav {
         display: flex;
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: start;
         padding: 25px 60px 10px 60px !important;
         max-height: 630px;
         text-align: center;
@@ -238,6 +238,7 @@ ion-icon[name='logo-github'] {
 
     .sideDesc img {
         border-radius: 50px;
+        /* width: 60%; */
         min-width: 185px;
     }
 
@@ -433,12 +434,6 @@ ion-icon[name='logo-github'] {
     cursor: pointer;
 }
 
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
-}
 
 .timeline h1 {
     font-weight: 300;
@@ -457,12 +452,6 @@ ion-icon[name='logo-github'] {
     padding-bottom: 25px;
     margin-bottom: 25px;
     position: relative;
-}
-
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
 }
 
 .timeline .event:last-of-type {
@@ -487,13 +476,6 @@ ion-icon[name='logo-github'] {
     min-width: 120px;
 }
 
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
-
 .timeline .event:after {
     -webkit-box-shadow: 0 0 0 3px #6c63ff;
     box-shadow: 0 0 0 3px #6c63ff;
@@ -504,12 +486,6 @@ ion-icon[name='logo-github'] {
     width: 9px;
     content: "";
     top: 5px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
 }
 
 .rtl .timeline {
@@ -530,4 +506,24 @@ ion-icon[name='logo-github'] {
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
+}
+
+@media (max-width: 767px) {
+    .timeline {
+        max-width: 98%;
+        padding: 25px;
+    }
+
+    .timeline .event {
+        padding-top: 30px;
+    }
+
+    .timeline .event:before {
+        left: 0px;
+        text-align: left;
+    }
+
+    .timeline .event:after {
+        left: -31.8px;
+    }
 }
