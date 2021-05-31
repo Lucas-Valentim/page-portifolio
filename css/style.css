@@ -234,6 +234,7 @@ ion-icon[name='logo-github'] {
         position: fixed;
         padding-left: 45px;
         padding-right: 45px;
+        max-width: inherit;
     }
 
     .sideDesc img {
